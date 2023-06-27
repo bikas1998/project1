@@ -1,0 +1,566 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Bootstrap </title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+    <style>
+        * {
+            box-sizing: border-box;
+          font-size: 14px;
+        }
+    </style>
+</head>
+
+<body onload="fun()" style="background-color: rgb(240, 234, 234);">
+    
+    <nav class="navbar navbar-expand-lg navbar-light" style="background-color:#2c70ce    ; height: 8vh;">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#"><img
+                    src="https://www.abaxsoft.com/blog/wp-content/uploads/2016/07/business-logo-design.jpg"
+                    height="40px" width="90px" alt=""></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="d-flex">
+                <a class="nav-link" href="#">
+                    <i class="fa fa-instagram text-white">Instagram</i>
+                </a>
+
+                <a class="nav-link" href="#">
+                    <i class="	fa fa-facebook-official text-white">facebook</i>
+                </a>
+
+                <a class="nav-link" href="#">
+                    <i class="	fa fa-google text-white">Google</i>
+                </a>
+
+
+                <img src="https://seeklogo.com/images/C/cristiano-ronaldo-logo-4A69DFB0B0-seeklogo.com.png"
+                    height="35px" alt="">
+            </div>
+    </nav>
+
+
+
+    <header class="bg-white text-light" style="height: 10vh;">
+        <div class=" container-fluid">
+            <div class="row align-items-center text-dark  ">
+                <div class="col-md-3">
+                    <h1>Find Website</h1>
+                </div>
+
+
+
+                <div class="col-md-9">
+
+
+                    <div class="d-flex" id="search-container">
+                        <input type="text" class="form-control me-2 all-site " id="search" placeholder="Location...."
+                            style="width: 50vh;">
+
+                        <select onchange="filterdata(this.value)" style="width: 50vh;">
+    
+                           
+
+                            <option>Catagory</option>
+                            <option value="1">AbhiBus</option>
+                            <option value="2">Agoda</option>
+                            <option value="3">Air Asia</option>
+                            <option value="4">Air bnb</option>
+                            <option value="5">Akbar Travels</option>
+                            <option value="6">AliExpress</option>
+                            <option value="7">Amazon India</option>
+                            <option value="8">Amazon Pay</option>
+
+
+                            <option value="9">BigBasket</option>
+                            <option value="10">BigRock</option>
+                            <option value="11">BookMyForex</option>
+                            <option value="12">BookMyShow</option>
+
+
+                            <option value="13">CarDekho</option>
+                            <option value="14">CarWale</option>
+                            <option value="15">Cleartrip</option>
+                            <option value="16">Club Mahindra</option>
+                            <option value="17">Cox & Kings</option>
+
+
+                            <option value="18">Expedia</option>
+                            <option value="19">FabHotels </option>
+                            <option value="20">Ferns N Petals</option>
+                            <option value="21">FirstCry</option>
+                            <option value="22">Flipkart</option>
+                            <option value="23">Foodpanda</option>
+                            <option value="24">Freecharge</option>
+                            <option value="25">Freshmenu</option>
+
+
+                            <option value="26">Goibibo</option>
+                            <option value="27">GoDaddy</option>
+                            <option value="28">Grofers</option>
+
+
+                            <option value="29">HDFC Bank</option>
+                            <option value="30">Healthkart</option>
+                            <option value="31">HomeShop18</option>
+                            <option value="32">Hotel.com</option>
+                            <option value="33">Housing.com</option>
+
+                            <option value="34">ICICI Bank</option>
+                            <option value="35">IndiaMART</option>
+                            <option value="36">Indian Railways</option>
+                            <option value="37">IndiGo</option>
+                            <option value="38">ixigo</option>
+
+                            <option value="39">Jabong</option>
+                            <option value="40">Justdial</option>
+
+                            <option value="41">Kayak</option>
+
+                            <option value="42">Lenskart</option>
+                            <option value="43">Limeroad</option>
+
+
+                            <option value="44">MakeMyTrip</option>
+                            <option value="45">Medlife</option>
+                            <option value="46">MMT</option>
+                            <option value="47">Magicbricks</option>
+                            <option value="48">Mobikwik</option>
+                            <option value="49">Myntra</option>
+
+                            <option value="50">Naaptol</option>
+                            <option value="51">Netmeds</option>
+                            <option value="52">Niki</option>
+                            <option value="53">Nykaa</option>
+                            <option value="54">NoBroker</option>
+                            <option value="55">Nestaway</option>
+
+
+                            <option value="56">Ola</option>
+                            <option value="57">OYO</option>
+                            <option value="58">Paytm</option>
+                            <option value="59">Paytm Mall</option>
+                            <option value="60">Pepperfry</option>
+                            <option value="61">Policybazaar</option>
+                            <option value="62">Practo</option>
+
+
+                            <option value="63">Quikr</option>
+                            <option value="64">RedBus</option>
+                            <option value="65">Rentomojo</option>
+
+                            <option value="66">Swiggy</option>
+                            <option value="67">Snapdeal</option>
+
+                            <option value="68">Travelguru</option>
+                            <option value="69">Trivago</option>
+                            <option value="70">Thomas Cook</option>
+                            <option value="71">Uber</option>
+                            <option value="72">Voonik</option>
+
+                            <option value="73">Yatra.com</option>
+
+                            <option value="74">Zomato </option>
+                            <option value="75">Zoomcar</option>
+                            <option value="76">Zivame</option>
+                        </select>
+                        &nbsp; &nbsp;&nbsp;&nbsp;&nbsp;
+                        <button class="btn btn-danger" type="button" style="width: 20vh;">Find Areas</button>
+                    </div>
+
+
+
+
+
+
+
+
+
+                </div>
+
+
+            </div>
+        </div>
+        </div>
+    </header>
+
+
+
+    <div class="container-fluid p-5" style="background: #ddd;">
+        <div class="row">
+            <div class="col-md-3">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="row">
+                            <div class="col-md-12 d-flex">
+                                <i class="fa fa-search text-danger mt-1"> &nbsp;</i>
+                                <p><b>Refine your search</b></p>
+                            </div>
+                            <p><b>Search by:</b></p>
+                        </div>
+                    </div>
+                </div>
+
+
+
+
+
+
+
+
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="row">
+                            <div class="col-md-12 d-flex">
+                                <input type="text" placeholder="Company Name...">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <br>
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="row">
+                            <div class="col-md-12 d-flex">
+                                <input type="text" placeholder="Search by A-Z...">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                &nbsp;
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="row" >
+                            <div class="col-md-12 d-flex">
+
+
+                                <button>Design<input type="checkbox" name="cb" value="1" onclick="handleCheckboxChange(1)"></button>&nbsp;
+                                <button>UX<input type="checkbox" name="cb" value="2" onclick="handleCheckboxChange(2)"></button>&nbsp;
+                                <button>UI<input type="checkbox"  name="cb" value="3" onclick="handleCheckboxChange(3)"></button>
+
+
+                            </div>
+                            &nbsp;
+                            <hr>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="row">
+                            <div class="col-md-12 d-flex">
+                                <p><b>Filter by:</b></p>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="dropdown">
+                    <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton"
+                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Vehicle Type
+                    </button>
+
+                </div>
+
+
+                <br>
+                <div class="dropdown">
+                    <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton"
+                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Kilometers
+                    </button>
+
+                </div>
+
+
+
+
+                <br>
+                <div class="dropdown">
+                    <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton"
+                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Date of book
+                    </button>
+                </div>
+                <br>
+
+                <hr>
+                <button class="btn btn-danger" type="button">Filter </button>
+                <button class="btn btn-secondary" type="button">Reset</button>
+
+
+
+
+            </div>
+
+            <div class="col-md-9">
+
+
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="col-md-12">
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <h6>Displaying 24 of 120 vehicle results</h6>
+                                </div>
+                            </div>
+
+
+                            <div class="row">
+                                <div class="col-md-12 bg-white p-3 code ">
+                                    <div class="container">
+                                        <div class="row">
+                                            <div class="col-md-4">
+                                                <div class="container border">
+                                                    <img onmouseover="bigImg(this)" onmouseout="normalImg(this)" src ="https://pbs.twimg.com/profile_images/1371391005891563527/rip-cwgt_400x400.jpg "
+                                                        style="width: 100%; height: 70px;">
+                                                </div>
+                                            </div>
+                                            <div class="col-md-8">
+                                                <h4>Make My Trip</h4>
+                                                <p>company: <span style="color: #2c70ce ;"> MTM</span></p>
+                                                <p>location: <span style="color: #2c70ce">India</span></p>
+                                                <div class="float-end">
+                                                    <i class="	fa fa-star"></i>
+                                                    &nbsp
+                                                    <i class="	fa fa-share"></i>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <br>
+                            <div class="row">
+                                <div class="col-md-12 bg-white p-3 it ">
+                                    <div class="container">
+                                        <div class="row">
+                                            <div class="col-md-4">
+                                                <div class="container border">
+                                                    <img onmouseover="bigImg(this)" onmouseout="normalImg(this)" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTJfaTaokmq0MgpBYtRtdy3jcIm5Xb120t9Rbiy3cLnOw&s"
+                                                        style="width: 100%; height: 70px;">
+                                                </div>
+                                            </div>
+                                            <div class="col-md-8">
+                                                <h4>Travel Guru</h4>
+                                                <p>company: <span style="color: #2c70ce ;"> MTM</span></p>
+                                                <p>location: <span style="color: #2c70ce">India</span></p>
+                                                <div class="float-end">
+                                                    <i class="	fa fa-star "></i>
+                                                    &nbsp
+                                                    <i class="	fa fa-share"></i>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <br>
+                            <div class="row">
+                                <div class="col-md-12 bg-white p-3 code ">
+                                    <div class="container">
+                                        <div class="row">
+                                            <div class="col-md-4">
+                                                <div class="container border">
+                                                    <img onmouseover="bigImg(this)" onmouseout="normalImg(this)" src="https://content.jdmagicbox.com/comp/mumbai/e9/022pxx22.xx22.170706151907.q9e9/catalogue/yatra-com-online-websites-kqdjd.jpg?clr=412525"
+                                                        style="width: 100%; height: 70px;">
+                                                </div>
+                                            </div>
+                                            <div class="col-md-8">
+                                                <h4>Yatra.com</h4>
+                                                <p>company: <span style="color: #2c70ce ;"> MTM</span></p>
+                                                <p>location: <span style="color: #2c70ce">India</span></p>
+                                                <div class="float-end">
+                                                    <i class="	fa fa-star"></i>
+                                                    &nbsp
+                                                    <i class="	fa fa-share"></i>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <br>
+                            <div class="row">
+                                <div class="col-md-12 bg-white p-3 it">
+                                    <div class="container">
+                                        <div class="row">
+                                            <div class="col-md-4">
+                                                <div class="container border">
+                                                    <img onmouseover="bigImg(this)" onmouseout="normalImg(this)" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ_165LFqRp49wL8lJ9MxUXn7flS1CknLRJeAZ0kra7SA&s"
+                                                        style="width: 100%; height: 70px;">
+                                                </div>
+                                            </div>
+                                            <div class="col-md-8">
+                                                <h4>goibibo</h4>
+                                                <p>company: <span style="color: #2c70ce ;"> MTM</span></p>
+                                                <p>location: <span style="color: #2c70ce">India</span></p>
+                                                <div class="float-end">
+                                                    <i class="	fa fa-star"></i>
+                                                    &nbsp
+                                                    <i class="	fa fa-share"></i>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="col-md-6">
+                        <div class="col-md-12">
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <div class="float-end text-danger ">
+                                        <h6>Sort by: <span style="color: black;">Date Posted</span>  : option2</h6>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="row">
+                                <div class="col-md-12">
+
+                                    <div class="col-md-12 bg-white p-3 code ">
+                                        <div class="container">
+                                            <div class="row">
+                                                <div class="col-md-4">
+                                                    <div class="container border">
+                                                        <img onmouseover="bigImg(this)" onmouseout="normalImg(this)" src="https://www.freepnglogos.com/uploads/flipkart-logo-png/flipkart-logo-transparent-vector-3.png"
+                                                            style="width: 100%; height: 70px;">
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-8">
+                                                    <h4>Flipkart</h4>
+                                                    <p>company: <span style="color: #2c70ce ;"> MTM</span></p>
+                                                    <p>location: <span style="color: #2c70ce">India</span></p>
+                                                    <div class="float-end">
+                                                        <i class="	fa fa-star"></i>
+                                                        &nbsp
+                                                        <i class="	fa fa-share"></i>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <br>
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <div class="col-md-12 bg-white p-3 it ">
+                                        <div class="container">
+                                            <div class="row">
+                                                <div class="col-md-4">
+                                                    <div class="container border">
+                                                        <img onmouseover="bigImg(this)" onmouseout="normalImg(this)" src="https://dpogroup.com/wp-content/uploads/2017/07/orbitz.jpg"
+                                                            style="width: 100%; height: 70px;">
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-8">
+                                                    <h4>Orbitz</h4>
+                                                    <p>company: <span style="color: #2c70ce ;"> MTM</span></p>
+                                                    <p>location: <span style="color: #2c70ce">India</span></p>
+                                                    <div class="float-end">
+                                                        <i class="	fa fa-star"></i>
+                                                        &nbsp
+                                                        <i class="	fa fa-share"></i>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <br>
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <div class="col-md-12 bg-white p-3 code">
+                                        <div class="container">
+                                            <div class="row">
+                                                <div class="col-md-4">
+                                                    <div class="container border">
+                                                        <img onmouseover="bigImg(this)" onmouseout="normalImg(this)" src="https://www.shutterstock.com/image-photo/los-angeles-california-usa-17-260nw-1454623730.jpg"
+                                                            style="width: 100%; height: 70px;">
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-8">
+                                                    <h4>Hot Wire</h4>
+                                                    <p>company: <span style="color: #2c70ce ;"> MTM</span></p>
+                                                    <p>location: <span style="color: #2c70ce">India</span></p>
+                                                    <div class="float-end">
+                                                        <i class="	fa fa-star"></i>
+                                                        &nbsp
+                                                        <i class="	fa fa-share"></i>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <br>
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <div class="col-md-12 bg-white p-3 it">
+                                        <div class="container">
+                                            <div class="row">
+                                                <div class="col-md-4">
+                                                    <div class="container border">
+                                                        <img onmouseover="bigImg(this)" onmouseout="normalImg(this)" src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e4/Wikitravellogo.svg/1200px-Wikitravellogo.svg.png"
+                                                            style="width: 100%; height: 70px;">
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-8">
+                                                    <h4>Wiki Travel</h4>
+                                                    <p>company: <span style="color: #2c70ce ;"> MTM</span></p>
+                                                    <p>location: <span style="color: #2c70ce">India</span></p>
+                                                    <div class="float-end">
+                                                        <i class="	fa fa-star"></i>
+                                                        &nbsp
+                                                        <i class="	fa fa-share"></i>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js"
+        integrity="sha512-3gJwYpMe3QewGELv8k/BX9vcqhryRdzRMxVfq6ngyWXwo03GFEzjsUm8Q7RZcHPHksttq7/GFoxjCVUjkjvPdw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer">
+        </script>
+    <script src="index.js" >
+      
+    </script>
+
+</body>
+
+</html>
